@@ -3,9 +3,9 @@ function verificarPassword() {
     let select2 = document.getElementById("select2")
     let select3 = document.getElementById("select3")
 
-    let password1 = select1.options[select1.selectedIndex].text.trim();
-    let password2 = select2.options[select2.selectedIndex].text.trim();
-    let password3 = select3.options[select3.selectedIndex].text.trim();
+    let password1 = select1.value
+    let password2 = select2.value
+    let password3 = select3.value
   
     let passwordConcatenado = password1 + password2 + password3;
   
