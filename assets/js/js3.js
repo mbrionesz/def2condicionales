@@ -3,11 +3,11 @@ function verificarPassword() {
     let select2 = document.getElementById("select2")
     let select3 = document.getElementById("select3")
 
-    let password1 = select1.value
+    let password1 = select1.value // El value saca el número seleccionado del select que va del 1 - 9
     let password2 = select2.value
     let password3 = select3.value
   
-    let passwordConcatenado = password1 + password2 + password3;
+    let passwordConcatenado = password1 + password2 + password3; // Suma tipo string
   
     if (passwordConcatenado === "911") {  // Si la combinación de passwords es 911, es correcto
       document.getElementById("resultado").innerHTML = "Password 1 correcto";
